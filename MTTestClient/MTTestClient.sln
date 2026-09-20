@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTTestClient", "MTTestClient\MTTestClient.csproj", "{6FA61480-D325-4C37-A759-01621324F595}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MTTestClientSetup", "MTTestClientSetup\MTTestClientSetup.vdproj", "{88D4263C-D305-4335-AB2A-486939C4DD08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FA61480-D325-4C37-A759-01621324F595}.Debug|x86.ActiveCfg = Debug|x86
+		{6FA61480-D325-4C37-A759-01621324F595}.Debug|x86.Build.0 = Debug|x86
+		{6FA61480-D325-4C37-A759-01621324F595}.Release|x86.ActiveCfg = Release|x86
+		{6FA61480-D325-4C37-A759-01621324F595}.Release|x86.Build.0 = Release|x86
+		{88D4263C-D305-4335-AB2A-486939C4DD08}.Debug|x86.ActiveCfg = Debug
+		{88D4263C-D305-4335-AB2A-486939C4DD08}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

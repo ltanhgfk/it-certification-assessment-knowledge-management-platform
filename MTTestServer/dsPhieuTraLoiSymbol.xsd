@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPhieuTraLoiSymbol" targetNamespace="http://tempuri.org/dsPhieuTraLoiSymbol.xsd" xmlns:mstns="http://tempuri.org/dsPhieuTraLoiSymbol.xsd" xmlns="http://tempuri.org/dsPhieuTraLoiSymbol.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPhieuTraLoiSymbol" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPhieuTraLoiSymbol" msprop:Generator_UserDSName="dsPhieuTraLoiSymbol">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtPTLSymbol" msprop:Generator_TableClassName="dtPTLSymbolDataTable" msprop:Generator_TableVarName="tabledtPTLSymbol" msprop:Generator_RowChangedName="dtPTLSymbolRowChanged" msprop:Generator_TablePropName="dtPTLSymbol" msprop:Generator_RowDeletingName="dtPTLSymbolRowDeleting" msprop:Generator_RowChangingName="dtPTLSymbolRowChanging" msprop:Generator_RowEvHandlerName="dtPTLSymbolRowChangeEventHandler" msprop:Generator_RowDeletedName="dtPTLSymbolRowDeleted" msprop:Generator_RowClassName="dtPTLSymbolRow" msprop:Generator_UserTableName="dtPTLSymbol" msprop:Generator_RowEvArgName="dtPTLSymbolRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SBD" msprop:Generator_ColumnVarNameInTable="columnSBD" msprop:Generator_ColumnPropNameInRow="SBD" msprop:Generator_ColumnPropNameInTable="SBDColumn" msprop:Generator_UserColumnName="SBD" type="xs:string" minOccurs="0" />
+              <xs:element name="HoTen" msprop:Generator_ColumnVarNameInTable="columnHoTen" msprop:Generator_ColumnPropNameInRow="HoTen" msprop:Generator_ColumnPropNameInTable="HoTenColumn" msprop:Generator_UserColumnName="HoTen" type="xs:string" minOccurs="0" />
+              <xs:element name="Ten" msprop:Generator_ColumnVarNameInTable="columnTen" msprop:Generator_ColumnPropNameInRow="Ten" msprop:Generator_ColumnPropNameInTable="TenColumn" msprop:Generator_UserColumnName="Ten" type="xs:string" minOccurs="0" />
+              <xs:element name="NgaySinh" msprop:Generator_ColumnVarNameInTable="columnNgaySinh" msprop:Generator_ColumnPropNameInRow="NgaySinh" msprop:Generator_ColumnPropNameInTable="NgaySinhColumn" msprop:Generator_UserColumnName="NgaySinh" type="xs:string" minOccurs="0" />
+              <xs:element name="NoiSinh" msprop:Generator_ColumnVarNameInTable="columnNoiSinh" msprop:Generator_ColumnPropNameInRow="NoiSinh" msprop:Generator_ColumnPropNameInTable="NoiSinhColumn" msprop:Generator_UserColumnName="NoiSinh" type="xs:string" minOccurs="0" />
+              <xs:element name="Lop" msprop:Generator_ColumnVarNameInTable="columnLop" msprop:Generator_ColumnPropNameInRow="Lop" msprop:Generator_ColumnPropNameInTable="LopColumn" msprop:Generator_UserColumnName="Lop" type="xs:string" minOccurs="0" />
+              <xs:element name="MaDe" msprop:Generator_ColumnVarNameInTable="columnMaDe" msprop:Generator_ColumnPropNameInRow="MaDe" msprop:Generator_ColumnPropNameInTable="MaDeColumn" msprop:Generator_UserColumnName="MaDe" type="xs:string" minOccurs="0" />
+              <xs:element name="MonThi" msprop:Generator_ColumnVarNameInTable="columnMonThi" msprop:Generator_ColumnPropNameInRow="MonThi" msprop:Generator_ColumnPropNameInTable="MonThiColumn" msprop:Generator_UserColumnName="MonThi" type="xs:string" minOccurs="0" />
+              <xs:element name="KetCau_De" msprop:Generator_ColumnVarNameInTable="columnKetCau_De" msprop:Generator_ColumnPropNameInRow="KetCau_De" msprop:Generator_ColumnPropNameInTable="KetCau_DeColumn" msprop:Generator_UserColumnName="KetCau_De" type="xs:string" minOccurs="0" />
+              <xs:element name="STT" msprop:Generator_ColumnVarNameInTable="columnSTT" msprop:Generator_ColumnPropNameInRow="STT" msprop:Generator_ColumnPropNameInTable="STTColumn" msprop:Generator_UserColumnName="STT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

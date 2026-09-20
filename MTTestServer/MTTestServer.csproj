@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC2E3A30-45FD-4379-8A1D-F87B8FB9D2C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThiTracNghemUDCNTT</RootNamespace>
+    <AssemblyName>ThiTracNghemUDCNTT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ThiTracNghemUDCNTT.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="RTFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RTFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAccount.Designer.cs">
+      <DependentUpon>formAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDialogAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDialogAccount.Designer.cs">
+      <DependentUpon>LoginDialogAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDialog.Designer.cs">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crpFormAnswerSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crpFormAnswerSheet.Designer.cs">
+      <DependentUpon>crpFormAnswerSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crpFormScoreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crpFormScoreList.Designer.cs">
+      <DependentUpon>crpFormScoreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportPrintAnswerSheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPrintAnswerSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportPrintScoreList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPrintScoreList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsAnserSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAnserSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsScoreList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsScoreList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="formThisinhOutside.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formThisinhOutside.Designer.cs">
+      <DependentUpon>formThisinhOutside.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crpFormPTLSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crpFormPTLSymbol.Designer.cs">
+      <DependentUpon>crpFormPTLSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportInPTLSymbol.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportInPTLSymbol.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsPhieuTraLoiSymbol.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPhieuTraLoiSymbol.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crpFormBangDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crpFormBangDiem.Designer.cs">
+      <DependentUpon>crpFormBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crpFormPhieuTraLoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crpFormPhieuTraLoi.Designer.cs">
+      <DependentUpon>crpFormPhieuTraLoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportInDiemThi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportInDiemThi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportInPhieuTraLoi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportInPhieuTraLoi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsDiemThi.cs">
+      <DependentUpon>dsDiemThi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDiemThi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDiemThi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPhieuTraLoi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPhieuTraLoi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="formThisinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formThisinh.Designer.cs">
+      <DependentUpon>formThisinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="formDethi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDethi.Designer.cs">
+      <DependentUpon>formDethi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RtfReader.cs" />
+    <Compile Include="UpdateThisinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateThisinh.Designer.cs">
+      <DependentUpon>UpdateThisinh.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formAccount.resx">
+      <DependentUpon>formAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDialogAccount.resx">
+      <DependentUpon>LoginDialogAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDialog.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpFormAnswerSheet.resx">
+      <DependentUpon>crpFormAnswerSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpFormScoreList.resx">
+      <DependentUpon>crpFormScoreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPrintAnswerSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPrintAnswerSheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPrintScoreList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPrintScoreList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formThisinhOutside.resx">
+      <DependentUpon>formThisinhOutside.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpFormPTLSymbol.resx">
+      <DependentUpon>crpFormPTLSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportInPTLSymbol.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportInPTLSymbol.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpFormBangDiem.resx">
+      <DependentUpon>crpFormBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpFormPhieuTraLoi.resx">
+      <DependentUpon>crpFormPhieuTraLoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportInDiemThi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportInDiemThi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportInPhieuTraLoi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportInPhieuTraLoi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formThisinh.resx">
+      <DependentUpon>formThisinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDethi.resx">
+      <DependentUpon>formDethi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UpdateThisinh.resx">
+      <DependentUpon>UpdateThisinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAnserSheet.xsc">
+      <DependentUpon>dsAnserSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsAnserSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAnserSheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsAnserSheet.xss">
+      <DependentUpon>dsAnserSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsDiemThi.xsc">
+      <DependentUpon>dsDiemThi.xsd</DependentUpon>
+    </None>
+    <None Include="dsDiemThi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDiemThi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDiemThi.xss">
+      <DependentUpon>dsDiemThi.xsd</DependentUpon>
+    </None>
+    <None Include="dsPhieuTraLoi.xsc">
+      <DependentUpon>dsPhieuTraLoi.xsd</DependentUpon>
+    </None>
+    <None Include="dsPhieuTraLoi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPhieuTraLoi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPhieuTraLoi.xss">
+      <DependentUpon>dsPhieuTraLoi.xsd</DependentUpon>
+    </None>
+    <None Include="dsPhieuTraLoiSymbol.xsc">
+      <DependentUpon>dsPhieuTraLoiSymbol.xsd</DependentUpon>
+    </None>
+    <None Include="dsPhieuTraLoiSymbol.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPhieuTraLoiSymbol.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPhieuTraLoiSymbol.xss">
+      <DependentUpon>dsPhieuTraLoiSymbol.xsd</DependentUpon>
+    </None>
+    <None Include="dsScoreList.xsc">
+      <DependentUpon>dsScoreList.xsd</DependentUpon>
+    </None>
+    <None Include="dsScoreList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsScoreList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsScoreList.xss">
+      <DependentUpon>dsScoreList.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="packages\Microsoft.Office.Interop.Word.15.0.4797.1004\.signature.p7s" />
+    <None Include="packages\Microsoft.Office.Interop.Word.15.0.4797.1004\Microsoft.Office.Interop.Word.15.0.4797.1004.nupkg" />
+    <None Include="packages\VisualBasic.PowerPacks.Vs.1.0.0\.signature.p7s" />
+    <None Include="packages\VisualBasic.PowerPacks.Vs.1.0.0\VisualBasic.PowerPacks.Vs.1.0.0.nupkg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon\mtu_VrM_1.ico" />
+    <Content Include="Icon\mtu_VrM_2.ico" />
+    <Content Include="Icon\mtu_VrM_3.ico" />
+    <Content Include="Icon\mtu_VrM_4.ico" />
+    <Content Include="packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\netstandard2.0\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll" />
+    <Content Include="packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
